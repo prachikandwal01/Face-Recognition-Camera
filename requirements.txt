@@ -1,0 +1,4 @@
+flask
+face-recognition --no-deps
+numpy
+pillow

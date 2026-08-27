@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Face Recognition Camera</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>📷 Face Recognition Camera</h1>
+    <p>Start the camera, register faces, and identify in real time.</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <button id="startBtn">Start Camera</button>
+      <button id="captureBtn">Identify</button>
+      <input id="nameInput" placeholder="Name to register" />
+      <button id="registerBtn">Register Face</button>
+      <span id="status"></span>
+    </section>
+
+    <section class="stage">
+      <div class="video-wrap">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="overlay"></canvas>
+      </div>
+    </section>
+
+    <section class="results">
+      <pre id="resultBox"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <small>For learning purposes only. Get consent before use.</small>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+:root {
+  --bg: #0b1020;
+  --fg: #e5e7eb;
+  --muted: #94a3b8;
+  --acc: #22d3ee;
+}
+* {
+  box-sizing: border-box;
+}
+body { 
+  margin: 0; 
+  font-family: system-ui, sans-serif; 
+  background: var(--bg); 
+  color: var(--fg); 
+}
+header { 
+  padding: 20px; 
+  border-bottom: 1px solid #1f2937; 
+}
+header h1 { 
+  margin: 0 0 6px; 
+  font-size: 24px; 
+}
+header p { 
+  margin: 0; 
+  color: var(--muted); 
+}
+main { 
+  padding: 16px; 
+  max-width: 900px; 
+  margin: 0 auto; 
+}
+.controls { 
+  display: grid; 
+  grid-template-columns: repeat(4, max-content) 1fr; 
+  gap: 10px; 
+  align-items: center; 
+}
+button { 
+  background: var(--acc); 
+  border: 0; 
+  color: #0b1020; 
+  font-weight: 600; 
+  padding: 10px 14px; 
+  border-radius: 12px; 
+  cursor: pointer; 
+  box-shadow: 0 6px 20px rgba(34,211,238,.2); 
+}
+input { 
+  background: #0f172a; 
+  color: var(--fg); 
+  border: 1px solid #1f2937; 
+  padding: 10px 14px; 
+  border-radius: 12px; 
+}
+#status { 
+  color: var(--muted); 
+  padding-left: 8px; 
+}
+.stage { 
+  margin-top: 14px; 
+  display: grid; 
+  justify-content: start; 
+}
+.video-wrap { 
+  position: relative; 
+}
+video, canvas { 
+  max-width: 100%; 
+  border-radius: 16px; 
+}
+video {
+   display: block; 
+}
+#overlay { 
+  position: absolute; 
+  top: 0; left: 0; 
+}
+.results { 
+  margin-top: 16px; 
+}
+pre { 
+  background: #0f172a; 
+  padding: 12px; 
+  border-radius: 12px; 
+  border: 1px solid #1f2937; 
+  overflow: auto; 
+}
+footer { 
+  padding: 16px; 
+  color: var(--muted); 
+  text-align: center; 
+}
