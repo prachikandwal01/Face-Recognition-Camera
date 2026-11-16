@@ -206,3 +206,7 @@ practical applications of face-recognition technology.
 This project is currently intended for educational and personal project
 use. Add an appropriate open-source license if you decide to distribute
 the project publicly.
+
+
+mongodb://localhost:27017/
+admincluster0.myvn9ib.,mongodb.net/
